@@ -1,0 +1,17 @@
+{
+  "name": "Nami",
+  "version": "0.1.0",
+  "dependencies": {
+      "google-auth-library": "^0.9.7",
+      "google-spreadsheet":"*",
+      "express": "^4.9.5",
+      "jade": "^1.8.2",
+      "mongodb": "^1.4.12",
+      "crypto": "*",
+      "xmldoc": "*",
+      "colors": "*",
+      "formidable": "*",
+      "moment": "*",
+      "node-schedule":"*"
+  }
+}
