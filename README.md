@@ -15,5 +15,5 @@ method: POST
 说明: 
 	保存表单数据, 同步到 google spreadsheet
 测试: 
-	curl -d 'appid=foo&gssid=1fwDmpQo7bWaCT5jY-yw-G9b71RYUPT-Xwbm9EmHfzes&name=jacky&address=shanghai&mobile=15000477245' http://localhost:3011/form/submit | python -m json.tool
+	curl -d 'appid=foo&gssid=1fwDmpQo7bWaCT5jY-yw-G9b71RYUPT-Xwbm9EmHfzes&name=jacky&address=shanghai&mobile=15000477245' http://nami.postio.me/form/submit | python -m json.tool
 
