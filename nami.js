@@ -14,8 +14,8 @@ app.use(function(req,resp,next){
 	next();
 });
 
-var form = require('./api/form');
-form(app);
+require('./api/form')(app);
+require('./api/payment')(app);
 
 if (!module.parent) {
   app.listen(settings.port);
