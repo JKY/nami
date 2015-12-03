@@ -49,7 +49,7 @@ var endpoints = {
               return;
            };
            var orderid = q['orderid'];
-           var amount = q['amount'];
+           var amount = parseInt(q['amount'])/100;
            var openid  = q['openid'];
            var status  = q['status'];
            if(!util.validate.is('string',orderid) ||
