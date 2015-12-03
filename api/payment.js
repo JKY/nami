@@ -30,12 +30,16 @@ var endpoints = {
            var q = req['query'];
            var extr = q['extr'];
            var gssid = '';
+           var appid = '';
            var tmp = extr.split(',');
            tmp.forEach(function(s){
               var item = s.split(':');
               if(item.length == 2){
                   if(item[0] == 'gssid'){
                       gssid = item[1];
+                  };
+                  if(item[0] == 'appid'){
+                      appid = item[1];
                   }
               };
            });
@@ -54,7 +58,6 @@ var endpoints = {
               util.out.json(resp,200,{'error':'param error'});
               return;
            };
-           var appid = '';
            var hash = crypto.createHash('md5');
            hash.update(new Buffer(gssid + orderid + amount + openid + appid + 'uxe1!@ZEee33q'));
            var cert = hash.digest('hex');
