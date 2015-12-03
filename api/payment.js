@@ -33,7 +33,7 @@ var endpoints = {
            var appid = '';
            var tmp = extr.split(',');
            tmp.forEach(function(s){
-              var item = s.split(':');
+              var item = s.split('|');
               if(item.length == 2){
                   if(item[0] == 'gssid'){
                       gssid = item[1];
