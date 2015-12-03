@@ -65,7 +65,7 @@ var endpoints = {
               'time'   : moment().format('YYYY-MM-DD HH:mm:ss'),
               'openid' : openid,
               'orderid': orderid,
-              'app'    : appid,
+              'appid'  : appid,
               'amount' : amount,
               'cert'   : cert
            };
