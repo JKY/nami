@@ -43,7 +43,7 @@ var endpoints = {
                 util.out.json(resp,200,{'err':'gssid required'});
             }else{
                 dbo.add(FORM_COL_NAME,gssid,appid,data,function(err,_){
-                    util.out.json(resp,200,{'err':err,'url':'http://robin.postio.me'});
+                    util.out.json(resp,200,{'err':err,'url':'http://robin.postio.me/success?form'});
                 });
             }
         });

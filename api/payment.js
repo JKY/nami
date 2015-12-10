@@ -70,7 +70,7 @@ var endpoints = {
               'cert'   : cert
            };
            dbo.add(COL_NAME,gssid,appid,data,function(err,_){
-                util.out.json(resp,200,{'err':err,'url':'http://robin.postio.me'});
+                util.out.json(resp,200,{'err':err,'url':'http://robin.postio.me/success?payment'});
            });
       }
   }
